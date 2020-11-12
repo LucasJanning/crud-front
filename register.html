@@ -1,3 +1,63 @@
 <html>
-    <h1>Olá</h1>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- BOOTSTRAP JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- MASK -->
+    </head>
+
+    <body>
+        <div class="row justify-content-center div-main">
+            <div class="col-5 div-form">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h4 class="title-register-form">
+                            Cadastro de usuário
+                        </h4>
+                    </div>
+                    <form class="custom-form-register" id="form-register">
+                        <div class="col-12">
+                            <label for="full_name" class="title-input">Nome completo<span class="warning-required-input">*</span>:</label>
+                            <input type="text" maxlength="75" class="form-control custom-input" id="full_name" aria-describedby="full_name_help" placeholder="Roberto da Silva">
+                            <small id="full_name_help" class="form-text warning-input" hidden>Nome completo inválido!</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="age" class="title-input">Idade<span class="warning-required-input">*</span>:</label>
+                            <input type="text" maxlength="3" class="form-control custom-input" aria-describedby="age_help" id="age" placeholder="30">
+                            <small id="age_help" class="form-text warning-input" hidden>Idade incorreta!</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="cpf" class="title-input">CPF<span class="warning-required-input">*</span>:</label>
+                            <input type="text" maxlength="14" class="form-control custom-input" aria-describedby="cpf_help" id="cpf" placeholder="000.000.000-00">
+                            <small id="cpf_help" class="form-text warning-input" hidden>CPF incorreto!</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="title-input">E-mail<span class="warning-required-input">*</span>:</label>
+                            <input type="email" maxlength="75" class="form-control custom-input" aria-describedby="email_help" id="email" placeholder="roberto@gmail.com">
+                            <small id="email_help" class="form-text warning-input" hidden>E-mail incorreto!</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="address" class="title-input">Endereço<span class="warning-required-input">*</span>:</label>
+                            <input type="text" maxlength="150" class="form-control custom-input" aria-describedby="address_help" id="address" placeholder="Rua Dona Francisca nº 100, Costa e Silva">
+                            <small id="address_help" class="form-text warning-input" hidden>Endereço incorreto!</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="description" class="title-input">Descrição:</label>
+                            <textarea class="form-control custom-input" maxlength="225" id="description" rows="1" placeholder="Descrição..."></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary custom-btn" onClick="registerVal()">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
 </html>

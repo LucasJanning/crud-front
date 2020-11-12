@@ -1,0 +1,54 @@
+.div-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.div-form{
+    background-color: #6c757d;
+    border-radius: 5px;
+}
+
+.custom-input{
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.custom-btn{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0.08rem;
+}
+
+.title-register-form{
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+    font-size: xx-large;
+}
+
+.custom-form-register{
+    width: 100%;
+}
+
+.title-input{
+    color:#ffffff;
+}
+
+.warning-input{
+    color: #ff0000;
+    font-size: medium;
+}
+
+.warning-required-input{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.custom-form-register{
+    height: 100%;
+    width: 100%;
+}
