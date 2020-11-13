@@ -24,14 +24,6 @@ function registerVal(){
         document.getElementById("age_help").hidden = true;
     }
 
-    if(age==""||isNaN(age)||age<1||age>120){
-        document.getElementById("age_help").hidden = false;
-        document.getElementById("age").focus();
-        valid = false;
-    }else{
-        document.getElementById("age_help").hidden = true;
-    }
-
     if(cpf.search(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/)){
         document.getElementById("cpf_help").hidden = false;
         document.getElementById("cpf").focus();
